@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: song-ui
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    envVars:
+      - key: VITE_API_URL
+        value: https://song-api-qx06.onrender.com/musngi/songs
