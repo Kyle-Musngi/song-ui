@@ -4,11 +4,9 @@ services:
     env: node
     plan: free
     buildCommand: npm install && npm run build
-    startCommand: npm run preview -- --host 0.0.0.0 --port 3000
+    startCommand: node server.js
     envVars:
       - key: VITE_API_URL
         value: https://song-api-qx06.onrender.com/musngi/songs
-      - key: HOST
-        value: 0.0.0.0
       - key: PORT
         value: 3000
