@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
+    "preview": "node server.js",
+    "start": "node server.js",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+  }
+    "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^9.0.0",
