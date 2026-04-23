@@ -11,11 +11,11 @@ const PORT = process.env.PORT || 3000;
 // Serve static files from dist folder
 app.use(express.static(join(__dirname, 'dist')));
 
-// Handle SPA routing - send index.html for all routes
+// Handle SPA routing
 app.get('*', (req, res) => {
   res.sendFile(join(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`✓ Server running on http://0.0.0.0:${PORT}`);
 });
