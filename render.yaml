@@ -5,3 +5,8 @@ services:
     plan: free
     buildCommand: npm install && npm run build
     startCommand: node server.js
+    envVars:
+      - key: VITE_API_URL
+        value: https://song-api-qx06.onrender.com/musngi/songs
+      - key: PORT
+        value: 3000
